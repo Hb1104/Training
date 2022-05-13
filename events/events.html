@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Training</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: chartreuse;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+            margin: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <script src="eventstraining.js"></script>
+
+
+    <h1>Eventos JS</h1>
+
+    <h2 id="color" onclick="colorChange()">Clique aqui para trocar a cor par azul</h2>
+
+    <input type="text" oninput="changeH2(this)" placeholder="Troque o texto de h2 aqui">
+
+    <input type="text" onchange="changeText(this)" placeholder="Troque o texto de h1 aqui">
+
+    <div onclick="hiddenF(this)" onmouseover="showF(this)" onmouseout="backF(this)">Clique aqui para me fazer sumir ou passe o mouse para tornar azul</div>
+
+
+  
+</body>
+</html>
